@@ -4,6 +4,19 @@
   <meta charset="UTF-8">
   <title>Sorpresa 🎂</title>
   <style>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+<script>
+function abrir() {
+  document.getElementById("contenido").style.display = "block";
+
+  confetti({
+    particleCount: 150,
+    spread: 100,
+    origin: { y: 0.6 }
+  });
+}
+</script>
     body {
       background: linear-gradient(135deg, #ff9a9e, #fad0c4);
       font-family: Arial, sans-serif;
